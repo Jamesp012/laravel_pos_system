@@ -1,3 +1,61 @@
+## Code Modification Log
+
+| Mod No. | Modified By  | Date Modified | File Modified         | Description of Modification                            |
+|---------|--------------|---------------|--------------------------------------------------------------------------------|
+|         | James        | 2024-11-16    |                       | Initial creation of the modification log.              |
+| MOD 2   | James        | 2024-21-16    |                       | Initial creation of dashboard, edit, register view     |
+|         |              |               |                       | Added DataTables, Login, Logout                        |
+| MOD 3   | James        | 2024-22-16    |                       | Fix DataTables                                         |
+
+
+
+## FOR FORGOTTEN DATABASE PASSWORD
+
+# 1. sudo service stop mysql
+# 2. go to .conf of MySQL
+# 3. add 'skip-grant-tables' under '[mysqld]'
+# 4. sudo service start mysql
+# 5. mysql -u root 
+# 6. USE mysql;
+# 7. UPDATE user SET authentication_string=PASSWORD('new_password), plugin='mysql_native_password' WHERE User='root';
+# 8. FLUSH PRIVILEGES;
+# 9. php artisan migrate:status (DATABASE CONNECTION TESTING)
+
+
+## GITHUB COMMANDS
+
+# 1.  git init                                       //initialize Git repository
+# 2.  git remote add origin <repository-url>         //Add the remote repository
+# 3.  git checkout -b <branch-name>                  //Create a new branch and switch to it
+# 4.  git add .                                      //Stage all changes for commit
+# 5.  git commit -m "Your commit message"            //Commit the changes
+# 6.  git push origin <branch-name>                  //Push the changes to the remote repository
+# 7.  git pull origin <branch-name>                  //Pull the latest changes from the remote repository
+# 8.  git checkout main                              //Merge changes from another branch (e.g., feature-branch into main)
+#     git merge feature-branch                       //
+# 9.  git add <conflicted-file>                      //Resolve merge conflicts (if any)
+# 10. git commit -m "Resolved merge conflicts"       //Commit the merge resolution
+# 11. git git push origin main                       //Push the merged changes to the remote repository
+
+## PHP ARTISAN COMMANDS
+
+# 1.  php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

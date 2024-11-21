@@ -2,9 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\UserController;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\LoginController;          // MOD2
+use App\Http\Controllers\Auth\LogoutController;         // MOD2
 
+
+
+
+Route::get('/', function() {
+    return view('index');
+});
+
+// ------------------------ start MOD2 ------------------------------- //
 
 // Login Route
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -17,10 +25,7 @@ Route::post('/register', [RegisterController::class, 'register']);
 // Logout Route
 Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
 
-// Login Route
-Route::get('/', function() {
-    return view('index');
-});
+
 
 // Dashboard Route
 Route::get('/dashboard', function () {
@@ -39,3 +44,5 @@ Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.de
 // Edit
 Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('users.edit');
 Route::put('/users/{id}', [UserController::class, 'update'])->name('users.update');
+
+// ------------------------ end MOD2 ------------------------------- //

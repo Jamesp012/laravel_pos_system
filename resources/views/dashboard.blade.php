@@ -1,6 +1,5 @@
-
-
-
+<!--MOD2 -->
+ 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -69,9 +68,6 @@
       </div>
     </main>
   </div>
-  <script>  
-    
-  </script>
+  <script src="@vite(['resources/css/index.css'])">  </script>
 </body>
-
 </html>
