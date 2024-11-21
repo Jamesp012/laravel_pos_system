@@ -14,6 +14,21 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    
+/*
+    |--------------------------------------------------------------------------
+    |  Data Tables Service Provider
+    |--------------------------------------------------------------------------
+    |
+    | This value is for the Yajra data tables service provider.
+    |
+    */
+
+    // 'providers' => [
+    // Yajra\DataTables\DataTablesServiceProvider::class,
+    // ],
+
+
 
     /*
     |--------------------------------------------------------------------------

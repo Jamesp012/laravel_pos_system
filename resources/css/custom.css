@@ -1,0 +1,11 @@
+
+
+
+/* Limit the width of the password column */
+#users-table td:nth-child(4), /* Target the 4th column (Password) */
+#users-table th:nth-child(4) { /* If you also want to apply to the header */
+  max-width: 200px; /* Set the max-width you want */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+}
